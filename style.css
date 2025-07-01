@@ -1,0 +1,119 @@
+
+:root {
+    --underweight: #76b7f1;
+    --normal: #55d991;
+    --overweight: #ffd96a;
+    --obese: #fd6363;
+}
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background: #f2f6fa;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+}
+.container {
+    background: #fff;
+    padding: 2rem 2.5rem;
+    border-radius: 18px;
+    box-shadow: 0 6px 32px rgba(44,62,80,0.08);
+    max-width: 420px;
+    width: 100%;
+}
+h2 {
+    text-align: center;
+    margin-bottom: 1.2rem;
+    color: #a70707;
+    font-size: 2rem;
+    font-weight: 600;
+}
+.units-switch {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1.2rem;
+    gap: 1.5rem;
+}
+.units-switch label {
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: 500;
+}
+form label {
+    display: block;
+    margin-bottom: 0.18rem;
+    font-weight: 500;
+    margin-top: 0.9rem;
+}
+input[type="number"] {
+    width: 100%;
+    padding: 0.5rem;
+    margin-bottom: 0.3rem;
+    border: 1px solid #ccd3e1;
+    border-radius: 8px;
+    font-size: 1rem;
+    box-sizing: border-box;
+    background: #f8fafc;
+    transition: border-color 0.2s;
+}
+input[type="number"]:focus {
+    border-color: #ad0404;
+    outline: none;
+}
+button {
+    width: 100%;
+    padding: 0.7rem;
+    background: #a00303;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    font-weight: 600;
+    margin-top: 1rem;
+    transition: background 0.17s;
+}
+button:hover {
+    background: #5a0101;
+}
+.result {
+    text-align: center;
+    font-size: 1.15rem;
+    margin-top: 1.1rem;
+    padding: 1rem;
+    border-radius: 12px;
+    font-weight: 500;
+    min-height: 3.5rem;
+    transition: background 0.4s;
+}
+.bmi-table {
+    width: 100%;
+    margin-top: 1.6rem;
+    border-collapse: collapse;
+    font-size: 0.97rem;
+    box-shadow: 0 1px 8px rgba(0,0,0,0.03);
+}
+.bmi-table th, .bmi-table td {
+    border: 1px solid #e0e7ef;
+    padding: 0.45rem 0.8rem;
+    text-align: center;
+}
+.bmi-table th {
+    background: #f4f8ff;
+    font-weight: 600;
+}
+.bmi-table td.underweight { background: var(--underweight); }
+.bmi-table td.normal { background: var(--normal); }
+.bmi-table td.overweight { background: var(--overweight); }
+.bmi-table td.obese { background: var(--obese); }
+@media (max-width: 500px) {
+    .container {
+    padding: 1rem 0.7rem;
+    max-width: 98vw;
+    }
+    .bmi-table {
+    font-size: 0.85rem;
+    }
+}
+
