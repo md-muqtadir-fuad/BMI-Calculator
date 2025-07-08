@@ -1,4 +1,4 @@
-##Interface of this simple BMI calculator.
+<h1>Interface of this simple BMI calculator.</h1>
 
 | | |
 |---|---|
